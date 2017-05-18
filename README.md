@@ -15,3 +15,10 @@ The `help` subcommand prints out information about the script. *(Not yet impleme
 The `list` subcommand will attempt to find other executable files with names beginning with the name of the script, in the same directory. It will then attempt to work out how to get a `whatis` statement from each one: for scripts, it will pull out the second line and, if it's a comment, display it; for ELF binaries, it will try to run the command with a `-w` option. (I'm still not sure whether this is a good idea.) The results of these will be displayed next to the command's name.
 
 Trying to use any other subcommand will try to run an executable file with the name `script-subcommand` from the same directory as the script (i.e. one the `list` subcommand would display).
+
+## Todo
+
+ * Tests
+ * Help information
+ * Tweaking command line handling
+ * Adding debug flag
